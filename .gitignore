@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+lib-cov
+coverage
+coverage.json
+*.lcov
+
+# Compiled
+build/Release
+contracts/.placeholder
+test/.placeholder
+build
+bin
+
+# Dependencies
+package-lock.json
+node_modules/
+typechain
+
+# npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+deploy_mnemonic.key
+.secret
+
+#Hardhat
+cache
+artifacts
