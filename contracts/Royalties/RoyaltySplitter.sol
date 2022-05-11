@@ -6,8 +6,8 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 contract RoyaltySplitter {
     event RoyaltyReceived(address from, uint256 amount);
     using SafeERC20 for IERC20;
-    address payable private _author;
-    address payable private _project;
+    address payable private immutable _author;
+    address payable private immutable _project;
     uint256 private constant AUTOPAY_MIN_GAS = 10_000;
 
     receive() external payable {
@@ -23,8 +23,7 @@ contract RoyaltySplitter {
         _autoPay();
     }
 
-    function initialize(address author, address project) public {
-        require(_author == address(0), "Already Initialized");
+    constructor(address author, address project) {
         _author = payable(author);
         _project = payable(project);
     }
