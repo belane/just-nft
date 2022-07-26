@@ -15,8 +15,17 @@
     "type": "git",
     "url": "git+https://github.com/belane/just-nft.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nft",
+    "token",
+    "auction",
+    "ethereum",
+    "solidity",
+    "royalties",
+    "erc-721",
+    "erc-2981"
+  ],
+  "author": "belane",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/belane/just-nft/issues"
