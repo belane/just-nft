@@ -6,12 +6,13 @@ Non-Fungible Token and NFT Auction smart contracts for evm blockchains such as; 
 - Role-based token minting control.
 - Follows the ERC721 standard with Metadata.
 - On-chain Token Hash through `tokenHash(uint256 tokenId)` public method.
-- Includes EIP-2981 standard for NFT royalties.
+- Includes [EIP-2981](https://eips.ethereum.org/EIPS/eip-2981) standard for NFT royalties.
 - High Unit Test coverage.
 
 ### Variants
-1. NFT by Signature: Allows mining by submitting a signature of the authorized role (backend). 
-2. NFT with RoyaltySplitter: Deploy the RoyaltySplitter contract to automatically split (50/50) royalty payments to the author and the project treasury.
+
+1. **NFT by Signature**: Allows mining by submitting a signature of the authorized role (backend). 
+2. **NFT with RoyaltySplitter**: Deploy the RoyaltySplitter contract to automatically split (50/50) royalty payments between the author and the project treasury.
 
 ## Auction Contract
 
@@ -35,7 +36,7 @@ All files                |      100 |    84.21 |      100 |      100 |
 
 ## GAS
 
-Includes [hardhat-gas-reporter](https://www.npmjs.com/package/hardhat-gas-reporter) plugin for the calculation of current costs.
+The project includes [hardhat-gas-reporter](https://www.npmjs.com/package/hardhat-gas-reporter) plugin for calculating current costs.
 
 |  Deployments          |     wei     |
 ------------------------|-------------|
