@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.15;
 
 abstract contract SafePayment {
     event FailedPayment(address to, uint256 amount);
