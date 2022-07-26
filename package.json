@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/belane/just-nft#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "4.6.0",
+    "@openzeppelin/contracts": "4.7.1",
     "dotenv": "^16.0.0",
     "hardhat-tracer": "^1.1.0-rc.3"
   },
